@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,8 @@
     <title>Tea house resource</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/64006956ca.js" crossorigin="anonymous"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,23 +20,56 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'bg-danger': '#f97316',
                     }
                 }
             }
         }
     </script>
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
 </head>
 
 <body class="font-manrope">
-    <header>
-        
+    <header class="w-11/12 mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse ">
+                <img src="/images/banner.png" class="max-w-sm" />
+                <div class="flex gap-3 items-center  -mr-72 mt-60 w-[200px] h-[100px] shadow-2xl bg-red-100">
+                    <div>
+                        <i class="font-semibold text-4xl text-orange-600 fa-solid fa-star"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-3xl">5.00</h2>
+                        <p class="text-xs font-normal">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-5xl font-bold text-[#1C1C1C]">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 font-medium text-base text-[#777]">Tea and Botanical Solutions Supplier Give Optimum
+                        Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn bg-bg-danger text-white">Explore More</button>
+                </div>
+
+            </div>
+        </div>
+
     </header>
-    <main></main>
+    <!-- Our Featured Products -->
+
+    <main class="w-11/12 mx-auto">
+        <section class="mt-16">
+            <h2 class="text-4xl font-bold text-center text-[#1C1C1C]">Our Featured Products</h2>
+            <p class="text-base font-medium text-[#777] text-center my-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                in some form, <br> by injected humour, or randomised words which don't look even slightly believable. 
+            </p>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
